@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -11,29 +12,8 @@
     <link href="css/custom.css" rel="stylesheet">
 </head>
 <body>
-    <!-- NAVBAR -->
-    <div class="row" style="margin-bottom:15em;">
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand"><span class="fa fa-rocket"></span></a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-                <ul class="nav navbar-nav">
-                    <li><a href="/index.html">About</a></li>
-                    <li><a href="/index.html">Resume</a></li>
-                    <li><a href="/index.html">Portfolio</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container">
+
+    <div class="container" style="margin-top:15em;">
         <div class="row">
             <div class="col-xs-12">
                 <div id="photo-header" class="text-center">
@@ -47,12 +27,54 @@
                 </div>
             </div>
         </div>
+        <!--</div>-->
+        <!--<div class="container" style="margin-top:-20px">-->
         <div class="row">
             <div class="col-xs-12 col-sm-7">
                 <!-- ABOUT ME -->
                 <div class="box">
                     <h2>Objective</h2>
                     <p> Highly motivated IT professional and web application developer with a mission to work for today's <a href="http://bfy.tw/srH">top technology companies</a>, where I can utilize my knowledge and skills to solve real-world problems.</p>
+                </div>
+                <!-- EDUCATION -->
+                <div class="box">
+                    <h2>Education</h2>
+                    <ul id="education" class="clearfix">
+                        <!--
+                        <li>
+                            <div class="year pull-left">1988</div>
+                            <div class="description pull-right">
+                                <h3>I was born.</h3>
+                                <p>Named by my father, Rolando Foronda. Originally supposed to be Brylliant, but the hospital made a mistake on my birth certificate! It's ok, "hard work overcomes talent."</p>
+                            </div>
+                        </li>
+                            -->
+                        <li>
+                            <div class="year pull-left">2009</div>
+                            <div class="description pull-right">
+                                <h3>Electronics and Computer Engineering Technology, UH Maui College.</h3>
+                                Associate of Science, Overall GPA: 3.55, Major GPA: 3.65
+                                <p>Graduated with Honors in Electronics and Computer Engineering Technology.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="year pull-left">2012</div>
+                            <div class="description pull-right">
+                                <h3>Computer Engineering, UH Manoa.</h3>
+                                Bachelor of Science, Overall GPA: 3.56, Major GPA: 3.51
+                                <p>Graduated with Honors in Computer Engineering while working part-time as a Technical Assistant at the University of Hawaii (USGS). Participated in annual IEEEXtreme 24-Hour Programming competition; placing within the top 20% of competitors.</p>
+                            </div>
+                        </li>
+                        <!--
+                        <li>
+                            <div class="year pull-left">201X</div>
+                            <div class="description pull-right">
+                                <h3>Computer Science, TBA. </h3> Master of Science
+                                <p>Need...to...sell...car...to...pay...for...1st...semester...tuition.</p>
+                            </div>
+                        </li>
+                            -->
+                    </ul>
                 </div>
                 <!-- EXPERIENCES -->
                 <div class="box">
@@ -112,43 +134,88 @@
                         </div>
                     </div>
                 </div>
-                <!-- EDUCATION -->
+                <!-- RESEARCH & PROJECTS -->
                 <div class="box">
-                    <h2>Education</h2>
-                    <ul id="education" class="clearfix">
-                        <!--
-                        <li>
-                            <div class="year pull-left">1988</div>
-                            <div class="description pull-right">
-                                <h3>I was born.</h3>
-                                <p>Named by my father, Rolando Foronda. Originally supposed to be Brylliant, but the hospital made a mistake on my birth certificate! It's ok, "hard work overcomes talent."</p>
+                    <h2>School Projects</h2>
+                    <div class="job clearfix">
+                        <div class="col-xs-3">
+                            <div class="where"><a href="http://www.eng.hawaii.edu/">University of Hawaii at Manoa</a> </div>
+                            <div class="year">Spring 2012 - Fall 2012</div>
+                        </div>
+                        <div class="col-xs-9">
+                            <div class="profession">Embedded Software Developer</div>
+                            <div class="description">
+                                <b>CENG Junior and Senior Project: Micromouse <br />
+                                    <i>Advisor: Tep Dobry</i>
+                                </b>
+                                <br />
+                                Hardware design of an autonomous robot to solve a 16x16 maze using various microelectronics components and circuitry, and maze solving algorithms. Technical writing and visual documentation to clearly communicate both hardware and software designs and considerations. Embedded software development for the PIC Microcontroller implementing various concepts:
+                                <ul>
+                                    <li>Software Control Loop Feedback Mechanism</li>
+                                    <li>Universal Asynchronous Receiver/Transmitter</li>
+                                    <li>Analog-to-Digital Conversion</li>
+                                    <li>Software Control Loop Feedback Mechanism</li>
+                                    <li>Maze Solving Algorithm (Flood Fill)</li>
+                                    <li>DC/Stepper Motor Control</li>
+                                    <li>Timers and Interrupts</li>
+                                </ul>
                             </div>
-                        </li>
-                            -->
-                        <li>
-                            <div class="year pull-left">2009</div>
-                            <div class="description pull-right">
-                                <h3>Electronics and Computer Engineering Technology, UH Maui College.</h3>
-                                Associate of Science, Overall GPA: 3.55, Major GPA: 3.65
-                                <p>Graduated with Honors in Electronics and Computer Engineering Technology.</p>
+                        </div>
+                    </div>
+                    <div class="job clearfix">
+                        <div class="col-xs-3">
+                            <div class="where"><a href="http://www.ifa.hawaii.edu/">Institure for Astronomy</a> </div>
+                            <div class="year">Spring 2011</div>
+                        </div>
+                        <div class="col-xs-9">
+                            <div class="profession">Research Student</div>
+                            <div class="description">
+                                <b>CENG Sophomore Project: Deformable Mirror Spring Loaded Interface <br />
+                                    <i> Advisor: Christ Ftaclas</i>
+                                </b>
+                                <br />
+                                <ul>
+                                    <li>Researched adaptive optics operation and its importance in removing the effects of atmospheric distortion.</li>
+                                    <li>Examined and characterized various spring loaded pogo pins using Hooke’s Law and simple harmonic motion.</li>
+                                    <li>Analyzed spring response for different input signals using Matlab Data Acquisition Toolbox.</li>
+                                </ul>
                             </div>
-                        </li>
-                        <li>
-                            <div class="year pull-left">2012</div>
-                            <div class="description pull-right">
-                                <h3>Computer Engineering, UH Manoa.</h3>
-                                Bachelor of Science, Overall GPA: 3.56, Major GPA: 3.51
-                                <p>Graduated with Honors in Computer Engineering while working part-time as a Technical Assistant at the University of Hawaii (USGS). Participated in annual IEEEXtreme 24-Hour Programming competition; placing within the top 20% of competitors.</p>
+                            <a href="/files/bf_ee296rept.pdf"><span class="fa fa-download fa-2x"></span> Download Project Report</a>
+                        </div>
+                    </div>
+                    <div class="job clearfix">
+                        <div class="col-xs-3">
+                            <div class="where">Northrop Grumman</div>
+                            <div class="year">Summer. 2008</div>
+                        </div>
+                        <div class="col-xs-9">
+                            <div class="profession">Intern</div>
+
+                            <div class="description">
+                                <b><i>Interactive Maintenance Program, Advisor: Albert Esquibel</i></b><br />
+                                Developed an interactive maintenance program training utilizing visual aids to be used for all new employees.
+                                Created step by step visual instructions on performing maintenance on electronic components such as sensor convertor groups, time indicator groups, auxiliary instrumentation and many others.
                             </div>
-                        </li>
-                        <li>
-                            <div class="year pull-left">201X</div>
-                            <div class="description pull-right">
-                                <h3>Computer Science, TBA. </h3> Master of Science
-                                <p>Need...to...sell...car...to...pay...for...1st...semester...tuition.</p>
+                        </div>
+                    </div>
+                    <div class="job clearfix">
+                        <div class="col-xs-3">
+                            <div class="where">University of Hawaii Maui College (USGS)</div>
+                            <div class="year">Mar. 2009 - Aug. 2012</div>
+                        </div>
+                        <div class="col-xs-9">
+                            <div class="profession">Technical Assistant</div>
+                            <div class="description">
+                                The intelligent and pragmatic progammer; providing full-stack (front-end and back-end) web application development in Microsoft ASP.NET framework.
+                                <ul>
+                                    <li>Developed and managed a lightweight web application to record and visualize species observations utilizing Twitter API, Google Maps API, MongoDB, PHP, JavaScript, and HTML. </li>
+                                    <li>Simplified management of species information and image collection using Drupal, PHP, and MySQL. Enhanced web form entry and functionalities using PHP, Access database, and an e-mail server to simplify and automate information aggregation.</li>
+                                    <li>Utilized network attached storages and scripts to automate desktop and server backups for all office employees.</li>
+                                    <li>Resolved problems reported by end users for local and wide area networks, personal computers and networking equipments.</li>
+                                </ul>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-5">
@@ -235,8 +302,16 @@
             </div>
         </div>
     </div>
+
+    <div id="menu" />
+
     <!-- JQUERY -->
     <script src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#menu').load('./navbar.html');
+        });
+    </script>
     <!-- BOOTSTRAP -->
     <script src="js/bootstrap.min.js"></script>
     <!-- SCRIPTS -->
