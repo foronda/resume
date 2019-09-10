@@ -1,54 +1,373 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resume</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+	
+	<!--
+		Basic
+	-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>Brylian - vCard / Resume / CV Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="vCard & Resume Template" />
+	<meta name="keywords" content="vcard, resposnive, resume, personal, card, cv, cards, portfolio" />
+	<meta name="author" content="beshleyua" />
+	
+	<!--
+		Load Fonts
+	-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	
+	<!--
+		Load CSS
+	-->
+	<link rel="stylesheet" href="css/basic.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/blogs.css" />
+	<link rel="stylesheet" href="css/ionicons.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/gradient.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	
+	<!--
+		Template Colors
+	-->
+	<!--<link rel="stylesheet" href="css/template-colors/green.css" />-->
+	<link rel="stylesheet" href="css/template-colors/blue.css" /> 
+	<!--<link rel="stylesheet" href="css/template-colors/orange.css" />-->
+	<!--<link rel="stylesheet" href="css/template-colors/pink.css" />-->
+	<!--<link rel="stylesheet" href="css/template-colors/purple.css" />-->
+	<!-- <link rel="stylesheet" href="css/template-colors/red.css" />
+ -->	
+	<!--
+		Template Dark
+	-->
+	<!-- <link rel="stylesheet" href="css/template-dark/dark.css" /> -->
+
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!--
+		Favicons
+	-->
+	<link rel="shortcut icon" href="images/favicons/favicon.ico">
+	
 </head>
+
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <div id="photo-header" class="text-center">
-                    <!-- PHOTO (AVATAR) -->
-                    <div id="photo">
-                        <img src="img/avatar.jpg" alt="avatar">
-                    </div>
-                    <div id="text-header">
-                        <h1>Aloha,<br> my name is <span>Bryl(ian) </span><sup>31yo</sup> and this is my resume</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--</div>-->
-        <!--<div class="container" style="margin-top:-20px">-->
-        <div class="row">
-            <div class="col-xs-12 col-sm-7">
-                <!-- ABOUT ME -->
-                <div class="box">
-                    <h2>Objective</h2>
-                    <p> Highly motivated and passionate IT professional and web application developer with a mission to work for today's <a href="http://bfy.tw/srH">top technology companies</a> where I can utilize my knowledge and skills to solve real-world problems.</p>
-                </div>
-                
-                <!-- EXPERIENCES -->
-                <div class="box">
-                    <h2>Experiences</h2>
-                    <div class="job clearfix">
-                        <div class="col-xs-3">
-                            <div class="where"><a href="http://www.kbhmaui.com/">Ka'anapali Beach Hotel</a> </div>
-                            <div class="year">Feb. 2013 - Present</div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="profession">IT Manager</div>
-                            <div class="description">
-                                The information technology compass of Hawaii's most Hawaiian Hotel; delivering short- and long-term visions for the company’s technology needs and goal.
-                                <ul>
+	<div class="page">
+		
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="centrize full-width">
+				<div class="vertical-center">
+					<div class="spinner">
+						<div class="double-bounce1"></div>
+						<div class="double-bounce2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- background -->
+		<div class="background gradient">
+			<ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+		</div>
+
+		<!--
+			Container
+		-->
+		<div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+
+			<!--
+				Header
+			-->
+			<header class="header">
+
+				<!-- menu -->
+				<div class="top-menu">
+					<ul>
+						<li class="active">
+							<a href="#about-card">
+								<span class="icon ion-person"></span>
+								<span class="link">About</span>
+							</a>
+						</li>
+						<li>
+							<a href="#resume-card">
+								<span class="icon ion-android-list"></span>
+								<span class="link">Resume</span>
+							</a>
+						</li>
+						<li>
+							<a href="#works-card">
+								<span class="icon ion-paintbrush"></span>
+								<span class="link">Works</span>
+							</a>
+						</li>
+						<!-- <li>
+							<a href="#blog-card">
+								<span class="icon ion-chatbox-working"></span>
+								<span class="link">Blog</span>
+							</a>
+						</li> -->
+						<li>
+							<a href="#contacts-card">
+								<span class="icon ion-at"></span>
+								<span class="link">Contact</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</header>
+
+			<!--
+				Card - Started
+			-->
+			<div class="card-started" id="home-card">
+
+				<!--
+					Profile
+				-->
+				<div class="profile">
+
+					<!-- profile image -->
+					<div class="slide" style="background-image: url(images/eoy2.jpg);"></div>
+
+					<!-- profile photo -->
+					<div class="image">
+						<img src="images/profile.jpg" />
+					</div>
+
+					<!-- profile titles -->
+					<div class="title">Bryl(ian) Foronda</div>
+					<div class="subtitle">IT Manager / Web Application Developer</div>
+					<!-- profile socials -->
+					<div class="social">
+						<a target="_blank" href="https://www.linkedin.com/in/brylforonda"><span class="fab fa-linkedin"></span></a>
+						<a target="_blank" href="mailto:brylian.foronda@gmail.com"><span class="fab fa-google"></span></a>
+
+						<!-- <a target="_blank" href="https://dribbble.com/"><span class="fab fa-dribbble"></span></a>
+						<a target="_blank" href="https://twitter.com/"><span class="fab fa-twitter"></span></a>
+						<a target="_blank" href="https://github.com/"><span class="fab fa-github"></span></a>
+						<a target="_blank" href="https://www.spotify.com/"><span class="fab fa-spotify"></span></a>
+						<a target="_blank" href="https://stackoverflow.com/"><span class="fab fa-stack-overflow"></span></a> -->
+					</div>
+					
+					<!-- profile buttons -->
+					<div class="lnks">
+						<a href="#" class="lnk">
+							<span class="text">Download Resume</span>
+							<span class="ion ion-archive"></span>
+						</a>
+						<a href="#" class="lnk discover">
+							<span class="text">Contact Me</span>
+							<span class="arrow"></span>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- 
+				Card - About
+			-->
+			<div class="card-inner animated active" id="about-card">
+				<div class="card-wrap">
+
+					<!-- 
+						About 
+					-->
+					<div class="content about">
+
+						<!-- title -->
+						<div class="title">About Me
+
+						<!-- content -->
+						<div class="row">
+
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+
+								<div class="text-box">
+									<p>
+										I am Brylian Foronda, a highly motivated and passionate IT professional and web application developer with a mission to work for today's <a href="http://bfy.tw/srH">top technology companies</a> where I can utilize my knowledge and skills to solve real-world problems.
+									</p>
+								</div>
+								<div class="info-list">
+									<ul>
+										<li><strong>Age . . . . .</strong> 31</li>
+										<li><strong>Address . . . . .</strong> Kahului, HI</li>
+									</ul>
+								</div>
+								<br/>
+								<div class="subtitle"><i>It’s not that I’m so smart, it’s just that I stay with problems longer.</i>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<!--
+						Services
+					-->
+					<div class="content services">
+
+						<!-- title -->
+						<div class="title">My Hobbies</div>
+
+						<!-- content -->
+						<div class="row service-items border-line-v">
+
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon"><span class="ion ion-code"></span></div>
+									<div class="name">Programming</div>
+									<p>
+										Modern and mobile-ready website that will help you 
+										reach all of your marketing.
+									</p>
+								</div>
+							</div>
+
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon"><span class="ion ion-music-note"></span></div>
+									<div class="name">Network Design and IT Security</div>
+									<p>
+										Music copying, transcription, arranging and composition services.
+									</p>
+								</div>
+							</div>
+
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12">
+								<div class="service-item">
+									<div class="icon"><span class="ion ion-speakerphone"></span></div>
+									<div class="name">Fitness/Boxing/Jiujitsu</div>
+									<p>
+										Advertising services include television, radio, print, mail and web.
+									</p>
+								</div>
+							</div>
+
+							<!-- service item -->
+							<div class="col col-d-6 col-t-6 col-m-12">
+								<div class="service-item">
+									<div class="icon"><span class="ion ion-ios-game-controller-b"></span></div>
+									<div class="name">Investing</div>
+									<p>
+										Developing memorable and unique mobile android, ios games.
+									</p>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<!--
+						Fun Fact
+					-->
+					<div class="content fuct">
+
+						<!-- title -->
+						<div class="title">Fun Fact</div>
+
+						<!-- content -->
+						<div class="row fuct-items">
+
+							<!-- fuct item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="ion ion-disc"></span></div>
+									<div class="name">80 Albumes Listened</div>
+								</div>
+							</div>
+
+							<!-- fuct item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="ion ion-trophy"></span></div>
+									<div class="name">15 Awards Won</div>
+								</div>
+							</div>
+
+							<!-- fuct item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="ion ion-coffee"></span></div>
+									<div class="name">1 000+ Cups of coffee</div>
+								</div>
+							</div>
+
+							<!-- fuct item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="ion ion-flag"></span></div>
+									<div class="name"></div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+</div>
+				</div>
+			</div>
+
+			<!--
+				Card - Resume
+			-->
+			<div class="card-inner" id="resume-card">
+				<div class="card-wrap">
+
+					<!--
+						Resume
+					-->
+					<div class="content resume">
+
+						<!-- title -->
+						<div class="title">Resume</div>
+
+						<!-- content -->
+						<div class="row">
+
+							<!-- experience -->
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="resume-title border-line-h">
+									<div class="icon"><i class="ion ion-briefcase"></i></div>
+									<div class="name">Experience</div>
+								</div>
+								<div class="resume-items">
+									<div class="resume-item border-line-h active">
+										<div class="date">Feb. 2013 - Present</div>
+										<div class="name">IT Manager</div>
+										<div class="company">Ka'anapali Beach HOtel.</div>
+										<p><i>
+											The information technology compass of Hawaii's most Hawaiian Hotel; delivering short-term and long-term visions for the company’s technology needs and goal.
+										</i></p><br/>
                                     <li>Provides maintenance and support for desktop and laptop computers and provides end user support for hardware and software necessary for operations of the Local Area Network.</li>
                                     <li>Monitors server performance, disk space, error logs, and backups of critical systems, provides 24x7 service for emergency desktop/network maintenance.</li>
                                     <li>Implements redundant systems, disaster recovery and back-up procedures, and information security control structures to maximize business up-time and prevent data loss.</li>
@@ -57,280 +376,628 @@
                                     <li>Works directly with all vendors that provide IT technologies to implement and support applications. </li>
                                     <li>Develops plans, standard operating procedures, and documentations for IT hardware and software installation, upgrade, maintenance, and compliance.</li>
                                     <li>Undertakes numerous IT projects simultaneously; organizes and follows strict scheduling to ensure projects are completed in a timely manner.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="job clearfix">
-                            <div class="col-xs-3">
-                                <div class="where">Research Corporation at the University of Hawaii</div>
-                                <div class="year">Sept. 2012 - Present</div>
-                            </div>
-                            <div class="col-xs-9">
-                                <div class="profession">Web Application Developer | Database Technician</div>
-                                <div class="description">
-                                    The intelligent and pragmatic progammer; providing full-stack (front-end and back-end) web application development in Microsoft ASP.NET framework.
-                                    <ul>
-                                        <li>Designs, implements, and manages numerous responsive web applications and relational databases for the Hawai'i Invasive Species Council.</li>
+
+									</div>
+									<div class="resume-item border-line-h active">
+										<div class="date">Sept. 2012 - Present</div>
+										<div class="name">Web Application Developer</div>
+										<div class="company">Research Corporation at the University of Hawaii</div>
+										<p><i>
+											The intelligent and pragmatic progammer; providing full-stack (front-end and back-end) web application development in Microsoft ASP.NET framework.
+										</i></p><br/>
+										<li>Designs, implements, and manages numerous responsive web applications and relational databases for the Hawai'i Invasive Species Council.</li>
                                         <li>Optimizes applications for maximum speed and scalability utilizing client-side scripting and LINQ to SQL compiled queries. </li>
                                         <li>Develops, designs, and improves product user interface and functionalities to enhance end user experience.</li>
                                         <li>Administers SQL Server back-end and develops SQL functions and stored procedures for data computations. </li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="job clearfix">
-                            <div class="col-xs-3">
-                                <div class="where">University of Hawaii Maui College (USGS)</div>
-                                <div class="year">Mar. 2009 - Aug. 2012</div>
-                            </div>
-                            <div class="col-xs-9">
-                                <div class="profession">Technical Assistant</div>
-                                <div class="description">
-                                    The intelligent and pragmatic progammer; providing full-stack (front-end and back-end) web application development in Microsoft ASP.NET framework.
-                                    <ul>
-                                        <li>Developed and managed a lightweight web application to record and visualize species observations utilizing Twitter API, Google Maps API, MongoDB, PHP, JavaScript, and HTML. </li>
+									</div>
+									<div class="resume-item">
+										<div class="date">Mar. 2009 - Aug. 2012</div>
+										<div class="name">Technical Assitant</div>
+										<div class="company">UH Maui College.</div>
+										<p><i>
+											The curious technical assistant who resolved probalems via research (google).
+										</i></p><br/>
+										<li>Developed and managed a lightweight web application to record and visualize species observations utilizing Twitter API, Google Maps API, MongoDB, PHP, JavaScript, and HTML. </li>
                                         <li>Simplified management of species information and image collection using Drupal, PHP, and MySQL. Enhanced web form entry and functionalities using PHP, Access database, and an e-mail server to simplify and automate information aggregation.</li>
                                         <li>Utilized network attached storages and scripts to automate desktop and server backups for all office employees.</li>
                                         <li>Resolved problems reported by end users for local and wide area networks, personal computers and networking equipments.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- EDUCATION -->
-                <div class="box">
-                    <h2>Education</h2>
-                    <ul id="education" class="clearfix">
-                        <!--
-                        <li>
-                            <div class="year pull-left">1988</div>
-                            <div class="description pull-right">
-                                <h3>I was born.</h3>
-                                <p>Named by my father, Rolando Foronda. Originally supposed to be Brylliant, but the hospital made a mistake on my birth certificate! It's ok, "hard work overcomes talent."</p>
-                            </div>
-                        </li>
-                            -->
-                        <li>
-                            <div class="year pull-left">2009</div>
-                            <div class="description pull-right">
-                                <h3>Electronics and Computer Engineering Technology, UH Maui College.</h3>
-                                Associate of Science, Overall GPA: 3.55, Major GPA: 3.65
-                                <p>Graduated with Honors in Electronics and Computer Engineering Technology.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="year pull-left">2012</div>
-                            <div class="description pull-right">
-                                <h3>Computer Engineering, UH Manoa.</h3>
-                                Bachelor of Science, Overall GPA: 3.56, Major GPA: 3.51
-                                <p>Graduated with Honors in Computer Engineering while working part-time as a Technical Assistant at the University of Hawaii (USGS). Participated in annual IEEEXtreme 24-Hour Programming competition; placing within the top 20% of competitors.</p>
-                            </div>
-                        </li>
-                        <!--
-                        <li>
-                            <div class="year pull-left">201X</div>
-                            <div class="description pull-right">
-                                <h3>Computer Science, TBA. </h3> Master of Science
-                                <p>Need...to...sell...car...to...pay...for...1st...semester...tuition.</p>
-                            </div>
-                        </li>
-                            -->
-                    </ul>
-                </div>
-                <!-- RESEARCH & PROJECTS -->
-                <div class="box">
-                    <h2>School Projects</h2>
-                    <div class="job clearfix">
-                        <div class="col-xs-3">
-                            <div class="where"><a href="http://www.eng.hawaii.edu/">University of Hawaii at Manoa</a> </div>
-                            <div class="year">Spring 2012 - Fall 2012</div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="profession">Embedded Software Developer</div>
-                            <div class="description">
-                                <b>
-                                    CENG Junior and Senior Project: Micromouse <br />
-                                    <i>Advisor: Tep Dobry</i>
-                                </b>
-                                <br />
-                                Hardware design of an autonomous robot to solve a 16x16 maze using various microelectronics components and circuitry, and maze solving algorithms. Technical writing and visual documentation to clearly communicate both hardware and software designs and considerations. Embedded software development for the PIC Microcontroller implementing various concepts:
-                                <ul>
-                                    <li>Software Control Loop Feedback Mechanism</li>
-                                    <li>Universal Asynchronous Receiver/Transmitter</li>
-                                    <li>Analog-to-Digital Conversion</li>
-                                    <li>Software Control Loop Feedback Mechanism</li>
-                                    <li>Maze Solving Algorithm (Flood Fill)</li>
-                                    <li>DC/Stepper Motor Control</li>
-                                    <li>Timers and Interrupts</li>
-                                </ul>
-                            </div>
-                            <a href="/resume/files/робот_ee396_final_rept.pdf"><span class="fa fa-download fa-2x"></span> Junior Project Report</a>&nbsp;&nbsp;
-                            <a href="/resume/files/sr_ee496_final_rept.pdf"><span class="fa fa-download fa-2x"></span> Senior Project Report</a>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="col-xs-3">
-                            <div class="where"><a href="http://www.ifa.hawaii.edu/">Institure for Astronomy</a> </div>
-                            <div class="year">Spring 2011</div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="profession">Research Student</div>
-                            <div class="description">
-                                <b>
-                                    CENG Sophomore Project: Deformable Mirror Spring Loaded Interface <br />
-                                    <i> Advisor: Christ Ftaclas</i>
-                                </b>
-                                <br />
-                                <ul>
-                                    <li>Researched adaptive optics operation and its importance in removing the effects of atmospheric distortion.</li>
-                                    <li>Examined and characterized various spring loaded pogo pins using Hooke’s Law and simple harmonic motion.</li>
-                                    <li>Analyzed spring response for different input signals using Matlab Data Acquisition Toolbox.</li>
-                                </ul>
-                            </div>
-                            <a href="/resume/files/bf_ee296rept.pdf"><span class="fa fa-download fa-2x"></span>Sophomore Project Report</a>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="col-xs-3">
-                            <div class="where">UHMC and Northrop Grumman</div>
-                            <div class="year">Summer 2008</div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="profession">Akamai Internship</div>
+									</div>
+								</div>
+							</div>
+							<!-- education -->
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="resume-title border-line-h">
+									<div class="icon"><i class="ion ion-university"></i></div>
+									<div class="name">Education</div>
+								</div>
+								<div class="resume-items">
+									<div class="resume-item border-line-h">
+										<div class="date">2009 - 2012</div>
+										<div class="name">Computer Engineering, UH Manoa</div>
+										<div class="company">Bachelor of Science | Overall GPA: 3.56, Major GPA: 3.51 </div>
+										<p>Graduated with Honors in Computer Engineering while working part-time as a Technical Assistant at the University of Hawaii (USGS). Participated in annual IEEEXtreme 24-Hour Programming competition; placing within the top 20% of competitors.</p>
+									</div>
+									<div class="resume-item border-line-h">
+										<div class="date">2006 - 2009</div>
+										<div class="name">Electronics and Computer Engineering Technology, UH Maui College</div>
+										<div class="company">Associate of Science Overall GPA: 3.55, Major GPA: 3.65</div>
+										<p>Graduated with Honors in Electronics and Computer Engineering Technology.</p>
+									</div>
+									
+								</div>
+							</div>
 
-                            <div class="description">
-                                <b>
-                                    Telescope Laboratory Preparation | Interactive Maintenance Program<br />
-                                    <i> Advisor: Mark Hoffman | Albert Esquibel</i>
-                                </b>
-                                <br />
-                                <ul>
-                                    <li>Implemented a DHCP network with separated VLANs configuration of a Cisco router alongside a VPN client for secure remote connection between two remote telescope workstations.</li>
-                                    <li>Analyzed and assembled workstations best suitable for image processing within budget constraints.</li>
-                                    <li>Developed an interactive maintenance training program training utilizing visual aids to be used for all new employees.</li>
-                                    <li> Created step by step visual instructions on performing maintenance on electronic components such as sensor convertor groups, time indicator groups, auxiliary instrumentation and many others.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-5">
+							<div class="clear"></div>
+						</div>
 
-                <!-- SKILLS -->
-                <div class="box">
-                    <h2>Skills</h2>
-                    <div class="skills">
-                        <div class="item-skills" data-percent="0.70">IT Management</div>
-                        <div class="item-skills" data-percent="0.55">Active Directory</div>
-                        <div class="item-skills" data-percent="0.70">Virtualization</div>
-                        <div class="item-skills" data-percent="0.65">Storage Area Networks</div>
-                        <div class="item-skills" data-percent="0.65">Network security</div>
-                        <div class="item-skills" data-percent="0.55">Programming</div>
-                        <div class="item-skills" data-percent="0.50">ASP.NET (framework)</div>
-                        <div class="item-skills" data-percent="0.55">Responsive Web</div>
-                        <div class="item-skills" data-percent="0.40">MSSQL</div>
-                        <div class="skills-legend clearfix">
-                            <div class="legend-left legend">Beginner</div>
-                            <div class="legend-left legend"><span>Proficient</span></div>
-                            <div class="legend-right legend"><span>Expert</span></div>
-                            <div class="legend-right legend">Master</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- CERTIFICATIONS -->
-                <div class="box">
-                    <h2>Certifications</h2>
-                    <div id="language-skills">
-                        <div class="skill"><a href="https://www.youracclaim.com/badges/84c295f3-cd76-4668-a441-679c8e4236c3/public_url">Juniper Networks Certified Associate, Junos (JNCIA-Junos)</a> <div class="pull-right"><div style="width: 100%;"></div></div></div>
-                        <div class="skill"><a href="https://www.youracclaim.com/badges/65a8de79-8e9f-4f1f-aeb4-9f246917bdd6/public_url">VMware Certified Professional 6.5 – Data Center Virtualization</a> <div class="pull-right"><div style="width: 100%;"></div></div></div>
-                        <!--<div class="skill">CompTIA Security+ (SY0-401) <div class="pull-right"><div style="width: 100%;">NOT COMPLETED</div></div></div>
-                        <div class="skill">MCSD: Web Applications (70-480) <div class="pull-right"><div style="width: 100%;">NOT COMPLETED</div></div></div>
-                        <div class="skill">MCSD: Web Applications (70-486) <div class="pull-right"><div style="width: 100%;">NOT COMPLETED</div></div></div>
-                        <div class="skill">MCSD: Web Applications (70-487) <div class="pull-right"><div style="width: 100%;">NOT COMPLETED</div></div></div>-->
-                    </div>
-                </div>
-                <!-- LANGUAGES -->
-                <div class="box">
-                    <h2>Languages</h2>
-                    <div id="language-skills">
-                        <div class="skill">English <div class="icons pull-right"><div style="width: 100%;" class="icons-red"></div></div></div>
-                        <div class="skill">Hawaiian Pidgin <div class="icons pull-right"><div style="width: 100%;" class="icons-red"></div></div></div>
-                        <div class="skill">Tagalog <div class="icons pull-right"><div style="width: 70%;" class="icons-red"></div></div></div>
-                    </div>
-                </div>
-                <!-- HOBBIES -->
-                <div class="box">
-                    <h2>Hobbies</h2>
-                    <div class="hobby">Web Development</div>
-                    <div class="hobby">Programming</div>
-                    <div class="hobby">Datecenter Optimization</div>
-                    <div class="hobby">Network Design and Security</div>
-                    <div class="hobby">Investing</div>
-                    <div class="hobby">Fitness/Boxing/MMA</div>
-                    <div class="hobby">Video Games</div>
-                    <div class="hobby">PC Repairs</div>
-                </div>
-                <!-- CONTACT -->
-                <div class="box clearfix">
-                    <h2>Contact</h2>
-                    <!--
-        <div class="contact-item">
-            <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
-            <div class="title only pull-right">702 527 2795</div>
-        </div>-->
-                    <div class="contact-item">
-                        <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
-                        <div class="title only pull-right">brylian.foronda@gmail.com</div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon pull-left text-center"><span class="fa fa-file-text fa-fw"></span></div>
-                        <div class="title pull-right">Personal Blog</div>
-                        <div class="description pull-right"><a href="http://brylianforonda.com">http://brylianforonda.com</a></div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span></div>
-                        <div class="title pull-right">LinkedIn</div>
-                        <div class="description pull-right"><a href="https://www.linkedin.com/in/brylforonda">https://www.linkedin.com/in/brylforonda</a></div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon pull-left text-center"><span class="fa fa-facebook fa-fw"></span></div>
-                        <div class="title pull-right">Facebook</div>
-                        <div class="description pull-right"><a href="https://www.facebook.com/bryl.foronda">https://www.facebook.com/bryl.foronda</a></div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon pull-left text-center"><span class="fa fa-instagram fa-fw"></span></div>
-                        <div class="title pull-right">Instagram</div>
-                        <div class="description pull-right"><a href="https://instagram.com/xibrealix">https://instagram.com/xibrealix</a></div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon pull-left text-center"><span class="fa fa-twitter fa-fw"></span></div>
-                        <div class="title pull-right">Twitter</div>
-                        <div class="description pull-right"><a href="https://twitter.com/xibReALix">https://twitter.com/xibReALix</a></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h2>Last Updated: September 12, 2018</h4>
-                </div>
-            </div>
-        </div>
-    </div>
+					</div>
 
-    <div id="menu" />
+					<!--
+						Skills
+					-->
+					<div class="content skills">
 
-    <!-- JQUERY -->
-    <script src="js/jquery.min.js"></script>
-    
-    <!--<script type="text/javascript">
-        $(document).ready(function () {
-            $('#menu').load('./navbar.html');
-        });
-    </script> -->
-    <!-- BOOTSTRAP -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- SCRIPTS -->
-    <script src="js/scripts.js"></script>
+						<!-- title -->
+						<div class="title">My Skills</div>
 
+						<!-- content -->
+						<div class="row">
+
+							<!-- skill item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="ion ion-easel"></i></div>
+										<div class="name">Information Technology</div>
+									</div>
+									<ul>
+										<li class="border-line-h"> 
+											<div class="name">Microsoft Enterprise Systems (AD, Exchange, Windows OS)</div>
+											<div class="progress">
+												<div class="percentage" style="width:85%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h"> 
+											<div class="name">Switching, Routing, Firewalls (Juniper, Fortinet, Sonicwall)</div>
+											<div class="progress">
+												<div class="percentage" style="width:80%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h"> 
+											<div class="name">Virtualization (VMWare, Hyper-V)</div>
+											<div class="progress">
+												<div class="percentage" style="width:70%;"></div>
+											</div>
+										</li>
+										<li>
+											<div class="name">Storage Area Networks (HPe Nimble Storage, QNAP)</div>
+											<div class="progress">
+												<div class="percentage" style="width:75%;"></div>
+											</div>
+										</li>
+										<li>
+											<div class="name">Network Design and Implementation</div>
+											<div class="progress">
+												<div class="percentage" style="width:72%;"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- skill item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="ion ion-code"></i></div>
+										<div class="name">Coding</div>
+									</div>
+									<ul>
+										<li class="border-line-h"> 
+											<div class="name">ASP.NET Framework / SQL</div>
+											<div class="progress">
+												<div class="percentage" style="width:80%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h"> 
+											<div class="name">Bootstrap / HTML / CSS</div>
+											<div class="progress">
+												<div class="percentage" style="width:80%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h"> 
+											<div class="name">PHP / MySQL</div>
+											<div class="progress">
+												<div class="percentage" style="width:65%;"></div>
+											</div>
+										</li>
+										<li>
+											<div class="name">HTML / CSS</div>
+											<div class="progress">
+												<div class="percentage" style="width:90%;"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!--
+				Card - Works
+			-->
+			<div class="card-inner" id="works-card">
+				<div class="card-wrap">
+
+					<!--
+						Works
+					-->
+					<div class="content works">
+
+						<!-- title -->
+						<div class="title">Recent Works</div>
+
+						<!-- filters -->
+						<div class="filter-menu filter-button-group">
+							<div class="f_btn active">
+								<label><input type="radio" name="fl_radio" value="grid-item" />All</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="photo" />Photo</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="video" />Video</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="music" />Music</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="design" />Design</label>
+							</div>
+						</div>
+
+						<!-- content -->
+						<div class="row grid-items border-line-v">
+
+							<!-- work item photo -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="images/works/work1.jpg" class="has-popup-image">
+											<img src="images/works/work1.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-image"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="images/works/work1.jpg" class="name has-popup-image">Motorcycle Helmet</a>
+										<div class="category">Photo</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- work item video -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="https://vimeo.com/97102654" class="has-popup-video">
+											<img src="images/works/work2.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-videocamera"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="https://vimeo.com/97102654" class="name has-popup-video">Minimalism Shapes</a>
+										<div class="category">Video</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- work item music -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item music border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&show_artwork=true" class="has-popup-music">
+											<img src="images/works/work3.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-music-note"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#" class="name has-popup">Staircase</a>
+										<div class="category">Music</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- work item design -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="#popup-1" class="has-popup-media">
+											<img src="images/works/work4.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-images"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#popup-1" class="name has-popup-media">Mobile Application</a>
+										<div class="category">Design</div>
+									</div>
+									<div id="popup-1" class="popup-box mfp-fade mfp-hide">
+										<div class="content">
+											<div class="image">
+												<img src="images/works/work4.jpg" alt="">
+											</div>
+											<div class="desc">
+												<div class="post-box">
+													<h1>Mobile Application</h1>						
+													<div class="blog-detail">Design</div>
+													<div class="blog-content">
+														<p>
+															So striking at of to welcomed resolved. Northward by described up household therefore 
+															attention. Excellence decisively nay man yet impression for contrasted remarkably.
+														</p>
+														<p>
+															Forfeited you engrossed but gay sometimes explained. Another as studied it to evident. 
+															Merry sense given he be arise. Conduct at an replied removal an amongst. Remaining 
+															determine few her two cordially admitting old.
+														</p>
+														<blockquote>
+															Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
+															Curae; Pellentesque suscipit.
+														</blockquote>
+														<p>
+															Tiled say decay spoil now walls meant house. My mr interest thoughts screened of outweigh 
+															removing. Evening society musical besides inhabit ye my. Lose hill well up will he over on. 
+															Increasing sufficient everything men him admiration unpleasing sex.
+														</p>
+														<ul class="list-style">
+															<li>Greatest properly off ham exercise all.</li>
+															<li>Unsatiable invitation its possession nor off.</li>
+															<li>All difficulty estimating unreserved increasing the solicitude.</li>
+														</ul>
+														<p>
+															Unpleasant astonished an diminution up partiality. Noisy an their of meant. Death means 
+															up civil do an offer wound of.
+														</p>
+													</div>
+													<a href="#" class="button">
+														<span class="text">View Project</span>
+														<span class="arrow"></span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- work item photo -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="images/works/work5.jpg" class="has-popup-image">
+											<img src="images/works/work5.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-image"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="images/works/work5.jpg" class="name has-popup-image">Gereal Travels</a>
+										<div class="category">Photo</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- work item music -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item music border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&show_artwork=true" class="has-popup-music">
+											<img src="images/works/work8.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-music-note"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#" class="name has-popup">Daylight Entrance</a>
+										<div class="category">Music</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- work item video -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="https://vimeo.com/97102654" class="has-popup-video">
+											<img src="images/works/work6.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-videocamera"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="https://vimeo.com/97102654" class="name has-popup-video">Architecture</a>
+										<div class="category">Video</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- work item design -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="#popup-2" class="has-popup-media">
+											<img src="images/works/work7.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-images"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#popup-2" class="name has-popup-media">Social Website</a>
+										<div class="category">Design</div>
+									</div>
+									<div id="popup-2" class="popup-box mfp-fade mfp-hide">
+										<div class="content">
+											<div class="image">
+												<img src="images/works/work7.jpg" alt="">
+											</div>
+											<div class="desc">
+												<div class="post-box">
+													<h1>Mobile Application</h1>						
+													<div class="blog-detail">Design</div>
+													<div class="blog-content">
+														<p>
+															So striking at of to welcomed resolved. Northward by described up household therefore 
+															attention. Excellence decisively nay man yet impression for contrasted remarkably.
+														</p>
+														<p>
+															Forfeited you engrossed but gay sometimes explained. Another as studied it to evident. 
+															Merry sense given he be arise. Conduct at an replied removal an amongst. Remaining 
+															determine few her two cordially admitting old.
+														</p>
+														<blockquote>
+															Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
+															Curae; Pellentesque suscipit.
+														</blockquote>
+														<p>
+															Tiled say decay spoil now walls meant house. My mr interest thoughts screened of outweigh 
+															removing. Evening society musical besides inhabit ye my. Lose hill well up will he over on. 
+															Increasing sufficient everything men him admiration unpleasing sex.
+														</p>
+														<ul class="list-style">
+															<li>Greatest properly off ham exercise all.</li>
+															<li>Unsatiable invitation its possession nor off.</li>
+															<li>All difficulty estimating unreserved increasing the solicitude.</li>
+														</ul>
+														<p>
+															Unpleasant astonished an diminution up partiality. Noisy an their of meant. Death means 
+															up civil do an offer wound of.
+														</p>
+													</div>
+													<a href="#" class="button">
+														<span class="text">View Project</span>
+														<span class="arrow"></span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!--
+				Card - Blog
+			-->
+			<div class="card-inner blog" id="blog-card">
+				<div class="card-wrap">
+
+					<!--
+						Blog
+					-->
+					<div class="content blog">
+
+						<!-- title -->
+						<div class="title">Latest Posts</div>
+
+						<!-- content -->
+						<div class="row border-line-v">
+
+							<!-- blog item -->
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="blog-post.html">
+											<img src="images/blog/blog1.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-document-text"></span>
+											</span>
+											<span class="date"><strong>20</strong>Jun</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="blog-post.html" class="name">By spite about do of do allow blush</a>
+										<div class="category">Design</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- blog item -->
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="blog-post.html">
+											<img src="images/blog/blog2.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-document-text"></span>
+											</span>
+											<span class="date"><strong>19</strong>Jun</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="blog-post.html" class="name">Two Before Arrow Not Relied</a>
+										<div class="category">Coding</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- blog item -->
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="blog-post.html">
+											<img src="images/blog/blog3.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-document-text"></span>
+											</span>
+											<span class="date"><strong>20</strong>Jun</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="blog-post.html" class="name">By spite about do of do allow blush</a>
+										<div class="category">Travel</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!--
+				Card - Contacts
+			-->
+			<div class="card-inner contacts" id="contacts-card">
+				<div class="card-wrap">
+
+					<!--
+						Conacts Info
+					-->
+					<div class="content contacts">
+
+						<!-- title -->
+						<div class="title">Get in Touch</div>
+
+						<!-- content -->
+						<div class="row">
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="map" id="map"></div>
+								<div class="info-list">
+									<ul>
+										<li><strong>Address . . . . .</strong> California, USA</li>
+										<li><strong>Email . . . . .</strong> adlard@example.com</li>
+										<li><strong>Phone . . . . .</strong> +123 654 78900</li>
+										<li><strong>Freelance . . . . .</strong> Available</li>
+									</ul>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<!--
+						Contact Form
+					-->
+					<div class="content contacts">
+
+						<!-- title -->
+						<div class="title">Contact Form</div>
+
+						<!-- content -->
+						<div class="row">
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="contact_form">
+									<form id="cform" method="post">
+										<div class="row">
+											<div class="col col-d-6 col-t-6 col-m-12">
+												<div class="group-val">
+													<input type="text" name="name" placeholder="Full Name" />
+												</div>
+											</div>
+											<div class="col col-d-6 col-t-6 col-m-12">
+												<div class="group-val">
+													<input type="text" name="email" placeholder="Email Address" />
+												</div>
+											</div>
+											<div class="col col-d-12 col-t-12 col-m-12">
+												<div class="group-val">
+													<textarea name="message" placeholder="Your Message"></textarea>
+												</div>
+											</div>
+										</div>
+										<div class="align-left">
+											<a href="#" class="button" onclick="$('#cform').submit(); return false;">
+												<span class="text">Send Message</span>
+												<span class="arrow"></span>
+											</a>
+										</div>
+									</form>
+									<div class="alert-success">
+										<p>Thanks, your message is sent successfully.</p>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<!--
+		jQuery Scripts
+	-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
+	<script src="js/imagesloaded.pkgd.js"></script>
+	<script src="js/masonry.pkgd.js"></script>
+	<script src="js/masonry-filter.js"></script>
+	<script src="js/jquery.slimscroll.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	
+	<!--
+		Google map api
+	-->
+	<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+	
+	<!--
+		Main Scripts
+	-->
+	<script src="js/scripts.js"></script>
+	
 </body>
 </html>
